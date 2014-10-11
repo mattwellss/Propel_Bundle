@@ -1,0 +1,36 @@
+{
+    "name": "mattwellss/aura-propel-bundle",
+    "description": "Integration of Propel ORM with Aura.di",
+    "type": "library",
+    "require": {
+        "propel/propel": "2.*@dev",
+        "aura/di": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9"
+    },
+    "authors": [
+        {
+            "name": "Matthew Wells",
+            "email": "mattwellss@github.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mattwellss\\Propel_Bundle\\_Config\\": "config/"
+        }
+    },
+    "extra": {
+        "aura": {
+            "type": "library",
+            "config": {
+                "common": "Mattwellss\\Propel_Bundle\\_Config\\Common"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
