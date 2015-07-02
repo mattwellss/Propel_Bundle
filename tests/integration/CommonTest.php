@@ -1,5 +1,5 @@
 <?php
-namespace Mattwellss\Propel_Bundle\_Config;
+namespace Mattwellss\Propel_Bundle\Config;
 
 use Aura\Di\ContainerBuilder;
 
@@ -8,11 +8,10 @@ class CommonTest extends \PHPUnit_Framework_TestCase
     public function testPropelIntegration()
     {
         $builder = new ContainerBuilder();
-        $di = $builder->newInstance(
-            [],
+        $di = $builder->newConfiguredInstance(
             [
-                'Mattwellss\Propel_Bundle\_Config\Common',
-                'Mattwellss\Dummy\_Config\Common'
+                'Mattwellss\Propel_Bundle\Config\Common',
+                'Mattwellss\Dummy\Config\Common'
             ]
         );
 

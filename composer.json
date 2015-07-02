@@ -4,8 +4,10 @@
     "type": "library",
     "require": {
         "propel/propel": "2.*@dev",
-        "aura/di": "~2.0"
+        "aura/di": "~3.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require-dev": {
         "phpunit/phpunit": "~4.0",
         "mockery/mockery": "~0.9"
@@ -19,18 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mattwellss\\Propel_Bundle\\_Config\\": "config/"
-        }
-    },
-    "extra": {
-        "aura": {
-            "type": "library",
-            "config": {
-                "common": "Mattwellss\\Propel_Bundle\\_Config\\Common"
-            }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "Mattwellss\\Propel_Bundle\\Config\\": "config/"
         }
     }
 }
